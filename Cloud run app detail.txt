@@ -1,0 +1,17 @@
+Extra notes with useful commands:
+
+1) Launch Cloud Shell
+
+2) Create a new folder: 
+
+mkdir tcb-cloudrun
+
+3) Upload app.js and Dockerfile to this folder via Cloud Shell (files located in the Download section here on this video).
+
+4) Build the Docker Image and upload to Container Registry:
+
+cd mkdir tcb-cloudrun
+
+gcloud builds submit --tag gcr.io/$DEVSHELL_PROJECT_ID/tcbcloudrun:v1.
+
+5) Follow the remaining instructions on the video
