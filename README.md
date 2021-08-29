@@ -12,5 +12,8 @@ https://cloud.google.com/sdk/gcloud/reference/builds/submit
 
 Few other options also:
 https://cloud.google.com/run/docs/quickstarts?_ga=2.54931112.-2008065166.1628261925
+
+Containerized Application:
+https://cloud.google.com/container-registry/docs/quickstart?_ga=2.255117835.-2008065166.1628261925
  
 
