@@ -6,5 +6,11 @@ What are the things are required for the Google Cloud Run or to migrate any app 
   1. App.js or Python or App code in any other format
   2. Dockerfile
   3. requirement.txt
+
+Deploy the app on container
+https://cloud.google.com/sdk/gcloud/reference/builds/submit
+
+Few other options also:
+https://cloud.google.com/run/docs/quickstarts?_ga=2.54931112.-2008065166.1628261925
  
 
