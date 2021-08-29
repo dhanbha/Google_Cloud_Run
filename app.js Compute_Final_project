@@ -1,0 +1,29 @@
+from flask import render_template #flask is a framework and
+from flask import Flask #Flask is a Python class datatype
+from flask import abort
+
+#Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.
+#It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions
+
+app = Flask(__name__)
+
+@app.route('/') #we are defining a function that returns the index.html
+def index():
+    return render_template('index.html')
+
+@app.route('/checkout/<int:planoid>')
+def checkout(planoid):
+
+	if planoid == 1:
+		plano = "Individual"
+		valor = 15
+	elif planoid == 2:
+		plano = "Family"
+		valor = 25
+	else:
+		abort(404)
+
+	return render_template('checkout.html',plano=plano,valor=valor)
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0') #debug = True, this will print out possible Python errors on the web page helping us trace the errors.
