@@ -7,7 +7,7 @@ What are the things are required for the Google Cloud Run or to migrate any app 
   2. Dockerfile
   3. requirement.txt
 
-Deploy the app on container
+Gcloud Build Submit
 https://cloud.google.com/sdk/gcloud/reference/builds/submit
 
 Few other options also:
